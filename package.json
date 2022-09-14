@@ -2,9 +2,10 @@
   "name": "digital-bank",
   "version": "1.0.0",
   "description": "A simple Digital Bank Platform.",
-  "main": "index.js",
+  "main": "app.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,20 @@
   "bugs": {
     "url": "https://github.com/Bootspace/Digital-Bank/issues"
   },
-  "homepage": "https://github.com/Bootspace/Digital-Bank#readme"
+  "homepage": "https://github.com/Bootspace/Digital-Bank#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.7.8",
+    "otp-generator": "^4.0.0",
+    "uuid": "^8.3.2",
+    "winston": "^3.8.1"
+  },
+  "devDependencies": {
+    "chalk": "^5.0.1",
+    "nodemon": "^2.0.19"
+  }
 }
